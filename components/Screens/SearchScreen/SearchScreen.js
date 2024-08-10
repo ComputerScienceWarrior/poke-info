@@ -1,10 +1,11 @@
-import { View, Text, Input } from 'react-native';
+import { SafeAreaView, Text, TextInput } from 'react-native';
+import Styles from './styles';
 
 const SearchScreen = () => {
     return(
-        <View>
-            <Input placeholder="Search for a Pokemon..."/>
-        </View>
+        <SafeAreaView>
+            <TextInput style={Styles.input} placeholder="Search for a Pokemon..."/>
+        </SafeAreaView>
     );
 };
 
