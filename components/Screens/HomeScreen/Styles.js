@@ -5,15 +5,10 @@ const Styles = StyleSheet.create({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'green',
+        backgroundColor: 'antiquewhite',
         height: '100%',
         width: '100%'
     },
-    homeScreenText: {
-        color: 'blue',
-        fontSize: 16,
-        letterSpacing: 2
-    }
 });
 
 export default Styles;
