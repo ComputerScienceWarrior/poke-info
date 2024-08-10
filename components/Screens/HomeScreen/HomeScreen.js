@@ -1,10 +1,10 @@
-import { View, Text, SafeAreaView } from 'react-native';
+import { SafeAreaView, Button } from 'react-native';
 import Styles from './Styles';
 
-const HomeScreen = () => { 
+const HomeScreen = ( {navigation} ) => { 
     return (
         <SafeAreaView style={Styles.container}>
-            <Text style={Styles.homeScreenText}>Home Screen</Text>
+            <Button style={Styles.searchButton} title='Search for a Pokemon' onPress={() => navigation.navigate('Search')}/>
         </SafeAreaView>
     )
 }
