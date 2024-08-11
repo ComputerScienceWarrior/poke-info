@@ -42,6 +42,7 @@ const SearchScreen = () => {
                 <Pokemon 
                     id={result.id}
                     name={result.name}
+                    image={`https://img.pokemondb.net/artwork/${result.name}.jpg`}
                     weight={result.weight} 
                     height={result.height}    
                 />
