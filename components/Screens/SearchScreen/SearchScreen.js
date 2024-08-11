@@ -2,6 +2,7 @@ import { SafeAreaView, Text, TextInput, Button, View, StyleSheet } from 'react-n
 import { useState } from 'react';
 import axios from 'axios';
 import Styles from './styles';
+import { Pokemon } from '../../../index'
 
 const SearchScreen = () => {
     const [loading, setLoading] = useState(false);
@@ -38,11 +39,12 @@ const SearchScreen = () => {
             {loading && <Text>Loading...</Text>}
             {error && <Text style={Styles.error}>{error}</Text>}
             {result && (
-                <View>
-                    <Text>Pokemon Name: {result.name}</Text>
-                    <Text>Pokemon Height: {result.height}</Text>
-                    <Text>Pokemon Weight: {result.weight}</Text>
-                </View>
+                <Pokemon 
+                    id={result.id}
+                    name={result.name}
+                    weight={result.weight} 
+                    height={result.height}    
+                />
             )}
         </SafeAreaView>
     );
