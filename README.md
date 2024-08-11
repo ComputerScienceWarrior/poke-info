@@ -1,6 +1,6 @@
 # Pokémon Search Application
 
-![Pokémon Search Application](/assets/readme-screenshot.jpg) <!-- Replace with the path to your image -->
+<img src="/assets/readme-screenshot.jpg" alt="Pokémon Search Application" width="600"/>
 
 ## Overview
 
