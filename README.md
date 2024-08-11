@@ -1,6 +1,6 @@
 # Pokémon Search Application
 
-<img src="/assets/readme-screenshot.jpg" alt="Pokémon Search Application" width="600"/>
+<img src="/assets/readme-screenshot.jpg" alt="Pokémon Search Application" width="400"/>
 
 ## Overview
 
