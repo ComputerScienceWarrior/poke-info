@@ -1,32 +1,43 @@
 import { StyleSheet } from "react-native";
 
-const Styles = StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderWidth: 2,
-        borderColor: 'black',
-        borderRadius: 10,
-        padding: 20,
-        margin: 10,
         backgroundColor: '#fff',
+        padding: 10,
+    },
+    innerContainer: {
+        flex: 1,
+        padding: 20,
+        justifyContent: 'center',
     },
     cardHeader: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 'auto',
-        width: '100%',
+        marginBottom: 15,
     },
     headerText: {
         fontSize: 18,
         fontWeight: 'bold',
     },
+    imagesContainer: {
+        alignItems: 'center',
+        marginBottom: 20,
+    },
+    image: {
+        width: 250,
+        height: 250,
+        resizeMode: 'contain',
+    },
+    detailsContainer: {
+        marginTop: 20,
+    },
     detailsText: {
         fontSize: 16,
         color: '#333',
+        marginBottom: 5,
     },
 });
 
-export default Styles;
+export default styles;
