@@ -1,24 +1,22 @@
 import { StyleSheet } from "react-native";
 
 const Styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        padding: 16,
+    },
     input: {
         height: 40,
         borderColor: 'gray',
         borderWidth: 1,
-        borderRadius: 10,
-        width: '50%',
+        marginBottom: 16,
         paddingHorizontal: 8,
-        margin: 10,
     },
-    container: {
-        display: 'flex',
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
+    error: {
+        color: 'red',
+        marginTop: 16,
     },
-    searchButton: {
-        width: '200'
-    }
 });
 
 export default Styles;
