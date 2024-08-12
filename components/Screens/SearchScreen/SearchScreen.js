@@ -1,4 +1,4 @@
-import { SafeAreaView, Text, TextInput, Button, View, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, TextInput, TouchableOpacity, View, StyleSheet } from 'react-native';
 import { useState } from 'react';
 import axios from 'axios';
 import Styles from './styles';
@@ -31,11 +31,13 @@ const SearchScreen = () => {
                 value={pokemon} 
                 onChangeText={setPokemon}
             />
-            <Button 
-                title="Search" 
+            <TouchableOpacity 
+                style={Styles.searchButton}
                 onPress={handleSearch} 
                 disabled={loading}
-            />
+            >
+                <Text style={Styles.searchText}>Search</Text>
+            </TouchableOpacity>
             {loading && <Text>Loading...</Text>}
             {error && <Text style={Styles.error}>{error}</Text>}
             {result && (
