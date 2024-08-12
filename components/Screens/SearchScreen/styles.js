@@ -17,6 +17,19 @@ const Styles = StyleSheet.create({
         color: 'red',
         marginTop: 16,
     },
+    searchButton: {
+        display: 'flex',
+        width: '100%',
+        borderWidth: 2,
+        padding: 10,
+        borderRadius: 20,
+        backgroundColor: 'skyblue',
+        marginBottom: 20
+    },
+    searchText: {
+        textAlign: 'center',
+        fontSize: 16
+    },
 });
 
 export default Styles;
