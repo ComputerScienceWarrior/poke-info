@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, } from "react-native";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({ 
     container: {
@@ -14,21 +14,52 @@ const styles = StyleSheet.create({
         width: 200,
         borderRadius: 10,
         borderColor: 'black',
+        borderWidth: 3,
         padding: 10,
-        backgroundColor: 'lightblue',
-        margin: 20
+        backgroundColor: '#f00000',
+        margin: 20,
     },
     buttonText: {
         textAlign: 'center',
-        fontSize: 16,
+        fontSize: 20,
         fontStyle: 'italic',
-        letterSpacing: 1
+        letterSpacing: 1,
+        fontWeight:'bold',
+        color: 'white',
     },
     mainImage: {
         width: 175,
         height: 175,
-        marginBottom: 50
+        marginBottom: 50,
     },
+    headerText: {
+        fontSize: 34,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        letterSpacing: 2,
+        fontStyle: 'italic',
+        marginBottom: 50,
+    },
+    battleZoneImage: {
+        width: 30,
+        height: 30,
+    },
+    battleZoneButton: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        border: 'solid',
+        borderWidth: 2,
+        padding: 10,
+        width: 200,
+        borderRadius: 10,
+    },
+    battleZoneText: {
+        fontSize: 20,
+        fontStyle: 'italic',
+        fontWeight: 'bold'
+    }
 });
 
 export default styles;
